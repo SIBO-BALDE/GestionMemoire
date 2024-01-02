@@ -19,8 +19,26 @@ export default function Connexion() {
     console.log('Email:', email);
     console.log('Password:', password);
     try {
-      const auth = getAuth(); // Récupérer l'objet d'authentification
-      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+      if(email===''|| password===''){
+        Swal.fire({
+          icon: "error",
+          title: "Oops",
+          text: "Vueillez remplir les champs vides",
+        });
+        return
+
+      }else if(email==='admin@gmail.com' && password=== 'admin1234'){
+        Swal.fire({
+          icon: "success",
+          title: "Felicitation",
+          text: "Vous etes connecter avec succée",
+        });
+        navigate('/dashbordadmin')
+        return
+      }
+      else{
+        const auth = getAuth(); // Récupérer l'objet d'authentification
+        const userCredential = await signInWithEmailAndPassword(auth, email, password);
       
       // L'utilisateur est maintenant connecté
       const user = userCredential.user;
@@ -31,6 +49,7 @@ export default function Connexion() {
       });
       navigate('/')
       console.log('Utilisateur connecté avec succès', user);
+      }
     } catch (error) {
       Swal.fire({
         icon: "error",
