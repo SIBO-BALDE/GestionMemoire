@@ -7,6 +7,7 @@ import Connexion from './Components/Authentification/Connexion';
 import DashbordUtilisateur from './Components/DashbordUtilisateur/DashbordUtilisateur';
 import Sujet from './Components/gestionSujet/gestionSujet';
 import Users from './Components/gestionUser/gestionUser';
+import Role from './Components/gestionRole/gestionRole';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route path="dashbord" element={<DashbordUtilisateur />} />
       <Route path="sujet" element={<Sujet />} />
       <Route path="users" element={<Users />} />
+      <Route path="role" element={<Role />} />
   </Routes>
   </>
   );
