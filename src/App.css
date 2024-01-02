@@ -85,5 +85,49 @@ border: #D46F4D !important;
 .content-topbar-bg{
   background-color: #BDDEF4 !important ;
 }
+.navbar-content-dashbord{
+  background-color: #ffff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  height: 50px;
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; */
+}
+.navbar-content-dashbord{
+  width: 100%
+  ;
+}
+.content-dashbord-apprenant{
+  display: grid;
+  grid-template-columns: 10% 80%;
+}
+.content1{
+  background-color: #D46F4D;
+  height: 100vh;
+}
+.content2 {
+  width: 100%
+  ;
+}
+.menu{
+  font-size: 30px;
+  margin-left: 150px;
+}
+.compte{
+  font-size: 30px;
+}
+.content-profile{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border:1px solid #fff
+ 
+}
+.content-img_profile{
+  
+
+
+}
 
 /*  color #BDDEF4 */
