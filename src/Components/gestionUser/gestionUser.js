@@ -79,7 +79,7 @@ const Users = () => {
 
   return (
     <>
-     <nav className="navbar navbar-expand-lg navbar-red navbar-dark">
+      <nav className="navbar navbar-expand-lg navbar-red navbar-dark">
         <div className="wrapper">
           
         </div>
@@ -111,7 +111,7 @@ const Users = () => {
       </ul>
     </div>
   </div>
-            </nav>
+      </nav>
       <div className="container mt-5">
         <h2 className="text-center mb-4">Liste des utilisateurs</h2>
         <ListWithPagination data={users} itemsPerPage={itemsPerPage} />
